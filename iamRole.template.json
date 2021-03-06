@@ -1,0 +1,35 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Description": "creates new IAM role for intelligent discovery",
+    "Resources": {
+        "iamRole": {
+            "Type": "AWS::IAM::Role",
+            "Properties": {
+                "RoleName": "IntelligentDiscovery-Security-Audit",
+                "AssumeRolePolicyDocument": {
+                    "Version": "2012-10-17",
+                    "Statement": [
+                        {
+                            "Effect": "Allow",
+                            "Principal": {
+                                "AWS": "arn:aws:iam::414398599351:root"
+                            },
+                            "Action": "sts:AssumeRole",
+                            "Condition": {
+                                "StringEquals": {
+                                    "sts:ExternalId": "9f5ae364-ee8c-bb38-95df-0175c5b02197"
+                                }
+                            }
+                        }
+                    ]
+                },
+                "ManagedPolicyArns": [
+                    "arn:aws:iam::aws:policy/ReadOnlyAccess",
+                    "arn:aws:iam::aws:policy/AWSSavingsPlansReadOnlyAccess"
+                ],
+                "Path": "/",
+                "Policies": []
+            }
+        }
+    }
+}
