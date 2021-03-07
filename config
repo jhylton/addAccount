@@ -1,0 +1,32 @@
+[profile 123456789012]
+sso_start_url = https://d-9267159c7d.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 123456789012
+sso_role_name = AdministratorAccess
+region = us-west-2
+output = json
+
+[profile 987654321012]
+sso_start_url = https://d-9267159c7d.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 987654321012
+sso_role_name = AdministratorAccess
+region = us-west-2
+output = json
+
+[profile 462797972482]
+sso_start_url = https://d-9267159c7d.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 462797972482
+sso_role_name = AdministratorAccess
+region = us-west-2
+output = json
+
+[profile 267676786871]
+sso_start_url = https://d-9267159c7d.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 267676786871
+sso_role_name = AdministratorAccess
+region = us-west-2
+output = json
+

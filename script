@@ -1,0 +1,4 @@
+aws cloudformation create-stack --stack-name IntelligentDiscoveryRole --template-body file://iamRole.template.json --capabilities CAPABILITY_NAMED_IAM --profile 123456789012
+aws cloudformation create-stack --stack-name IntelligentDiscoveryRole --template-body file://iamRole.template.json --capabilities CAPABILITY_NAMED_IAM --profile 987654321012
+aws cloudformation create-stack --stack-name IntelligentDiscoveryRole --template-body file://iamRole.template.json --capabilities CAPABILITY_NAMED_IAM --profile 462797972482
+aws cloudformation create-stack --stack-name IntelligentDiscoveryRole --template-body file://iamRole.template.json --capabilities CAPABILITY_NAMED_IAM --profile 267676786871
